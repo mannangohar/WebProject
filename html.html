@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+ *{
+  box-sizing: border-box;
+ }
+ body{
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+ }
+ .main-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ header{
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+ }
+ nav{
+  margin-right: 10px;
+  width: 100%;
+  display: inline-block;
+  background-color: #1a1717;
+ }
+
+ nav ul li{
+  margin:5px;
+  display: inline-block;
+  margin-right: 40px;
+ }
+ nav ul li a{
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px;
+ }
+ nav ul li a:hover {
+  background-color: #443737;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+  transform: scale(4.4);
+
+}
+
+.left-column{
+  flex: 1;
+  background-color: #f3f3f3;
+  padding: 10px;
+  text-align: center;
+}
+.left-top,
+.left-bottom,
+.right-top,
+.right-middle,
+.right-bottom{
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #f8f8f8;
+  margin: 10px;
+}
+.left-top h2,
+.left-bottom h2,
+.right-top h2,
+.right-middle h2,
+.right-bottom h2{
+  text-align: center;
+}
+.left-top p,
+.left-bottom p,
+.right-top p,
+.right-middle p,
+.right-bottom p{
+  text-align: justify;
+  padding: 20px 40px;
+  font-size: 16px;
+  background-color: #f5f5f5;
+}
+.right-column{
+  flex: 1;
+  background-color: #f3f3f3;
+  padding: 10px;
+  text-align: center;
+}
+.main-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+footer{
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+</style>
+<body>
+  <div>
+    <header>
+      <h1>My Website</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="services">Services</a></li>
+        <li style="float: right;"><a class="active" href="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="main-box"> 
+      <div class="left-column">
+        <div class="left-top">
+          <h2>Cars</h2>
+          <p>  Cars are modern vehicles designed for personal transportation.
+             They come in various types like sedans, SUVs, and electric cars,
+              offering comfort, speed, and efficiency. With 
+               in technology, many cars now include smart features
+                such as navigation systems, automatic braking,
+                 and fuel efficiency modes.
+          </p>
+        </div>
+        <div class="left-bottom">
+        <h2>Planes</h2>
+        <p> Planes are powerful flying machines that
+           transport people and goods across long
+            distances in a short time. They use wings
+             and engines to lift off the ground 
+              cruise at high altitudes. Modern 
+               are equipped with advanced navigation,
+               safety systems, and comfortable cabins
+                for passengers.
+        </p>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="right-top">
+          <h2>Formula 1</h2>
+          <p>Formula 1 cars are high-performance racing
+             machines designed for speed, precision,
+              and advanced aerodynamics. Built with
+               lightweight materials and powerful engines,
+                F1 cars can reach speeds over 350 km/h.
+
+          </p>
+        </div>
+        <div class="right-middle">
+          <h2>Boats</h2>
+          <p> Boats are watercraft designed to float
+             and move across lakes, rivers, and oceans.
+              They come in various types like sailboats,
+               motorboats, and fishing boats, serving
+                purposes from travel and transport to
+                 recreation and sports.
+          </p>
+        </div>
+        <div class="right-bottom">
+          <h2>Jets</h2>
+          <p>Jets are high-speed aircraft powered by jet engines,
+             commonly used for both military and commercial purposes.
+             Known for their speed and efficiency,
+              jets can fly at high altitudes and cover
+               long distances quickly.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h2>Footer</h2>
+    </footer>
+  </div>
+</body>
+</html>
